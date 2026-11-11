@@ -1,0 +1,13 @@
+# Buyer data — NEVER commit a database file. A committed .db would
+# publish buyers' emails, password hashes and order numbers to GitHub,
+# and every redeploy would overwrite the live file with the committed copy.
+data/
+*.db
+*.sqlite3
+
+# Python bytecode / caches
+__pycache__/
+*.pyc
+
+# Streamlit secrets (never commit)
+.streamlit/secrets.toml
